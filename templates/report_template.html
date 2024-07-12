@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Sales Report</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daily Sales Report</h1>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity Sold</th>
+            <th>Total Revenue</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.Product }}</td>
+            <td>{{ row.Quantity }}</td>
+            <td>{{ row.Revenue }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
