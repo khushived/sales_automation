@@ -27,9 +27,6 @@ sales_report_automation/
 │
 └── main.py
 
-markdown
-Copy code
-
 ## Dependencies
 
 The following Python libraries are required:
